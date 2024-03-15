@@ -10,7 +10,7 @@ A palindrome is a word or phrase that can be read the same way forwards and back
 <ol>You should have a button element with an id of "check-btn"</ol>
 <ol>You should have a div element with an id of "result"</ol>
 <ol>When you click on the #check-btn element without entering a value into the #text-input element, an alert should appear with the text "Please input a value"</ol>
-<ol>When the #text-input element only contains the letter A and the #check-btn element is clicked, the #result element should contain the text "A is a palindrome"<ol>
+<ol>When the #text-input element only contains the letter A and the #check-btn element is clicked, the #result element should contain the text "A is a palindrome"</ol>
 <ol>When the #text-input element contains the text eye and the #check-btn element is clicked, the #result element should contain the text "eye is a palindrome"</ol>
 <ol>When the #text-input element contains the text _eye and the #check-btn element is clicked, the #result element should contain the text "_eye is a palindrome"</ol>
 <ol>When the #text-input element contains the text race car and the #check-btn element is clicked, the #result element should contain the text "race car is a palindrome"</ol>
