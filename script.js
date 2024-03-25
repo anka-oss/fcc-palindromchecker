@@ -28,12 +28,12 @@ const palindromChecker = (input) => {
 }
 
 // --- LISTENERS
-checkPalindromeBtn.addEventListener("click", () => {
+checkPalindromeBtn.addEventListener('click', () => {
     palindromChecker(userInput.value);
     userInput.value = '';
 });
 
-userInput.addEventListener('keydown', e => {
+userInput.addEventListener('keypress', e => {
     if (e.key === 'Enter') {
       palindromChecker(userInput.value);
       userInput.value = '';
