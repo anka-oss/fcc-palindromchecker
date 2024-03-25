@@ -5,17 +5,17 @@ const resultField = document.getElementById('result');
 
 // --- FUNCTIONS
 const palindromChecker = (input) => {
-    const originalInput =input;
+    const originalInput = input;
 
-    resultField.replaceChildren();
-
-    if (userInput === '') {
+    if (input === '') {
         alert('Please input a value');
         return;
     } 
 
+    resultField.replaceChildren();
+
     const lowerCaseInput  = input.replace(/\s|[^a-zA-Z0-9]/g, '').toLowerCase();
-    console.log(lowerCaseInput);
+    // console.log(lowerCaseInput);
 
     let msg = `${originalInput} ${lowerCaseInput === [...lowerCaseInput].reverse().join('') ? 'is' : 'is not'} a palindrome.`;
 
@@ -32,3 +32,10 @@ checkPalindromeBtn.addEventListener("click", () => {
     palindromChecker(userInput.value);
     userInput.value = '';
 });
+
+userInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+      palindromChecker(userInput.value);
+      userInput.value = '';
+    }
+  });
