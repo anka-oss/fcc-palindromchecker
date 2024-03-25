@@ -37,5 +37,6 @@ userInput.addEventListener('keypress', e => {
     if (e.key === 'Enter') {
       palindromChecker(userInput.value);
       userInput.value = '';
+      e.preventDefault();
     }
   });
